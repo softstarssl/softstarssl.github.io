@@ -5,9 +5,9 @@ menu_id: about
 comments: false
 ---
 
-{% about avatar:/img/avatar.svg %}
+{% about avatar:/img/head.jpg %}
 softstar
-个人主页 & 技术博客
+A undergraduate student of CUHK-SZ
 {% endabout %}
 
 ## 简介
