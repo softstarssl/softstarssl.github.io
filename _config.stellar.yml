@@ -683,9 +683,9 @@ style:
   error_page: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/404/1c830bfcd517d.svg
   site: # 使用 background-image 后，blur 设置才有效
     background-image: url(/img/background.jpg)
-    blur-px: 8px           # 背景模糊程度：越小照片越清晰（0 = 不模糊）
-    blur-bg: var(--bg-a40) # 背景遮罩浓度：a30 照片更明显，a75 更淡更易读
-    blur-sat: 300%
+    blur-px: 0             # 背景模糊程度：0 = 完全清晰
+    blur-bg: var(--bg-a20) # 背景遮罩浓度：越小照片越实，越大越淡越易读
+    blur-sat: 100%
   # 技术文章内页各级标题前面的符号
   header_prefix:
     h2: '#'
