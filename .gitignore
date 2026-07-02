@@ -6,3 +6,6 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+
+# 不再上传 source/img 里新增的图片（已被跟踪的图片不受影响，仍会保留）
+# source/img/

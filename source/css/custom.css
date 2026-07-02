@@ -1,0 +1,42 @@
+/* 自定义样式覆盖（通过 _config.stellar.yml 的 inject.head 引入，加载于 main.css 之后） */
+
+/* 让内容卡片更"实"：默认 --card 是半透明白（亮色 0.5 / 暗色 0.25），会透出背景。
+   数值越接近 1 越不透明。想更透就调小，例如 0.75。 */
+:root {
+  --card: rgba(255, 255, 255, 0.8) !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --card: rgba(255, 255, 255, 0.55) !important; }
+}
+:root[data-theme="dark"] {
+  --card: rgba(255, 255, 255, 0.55) !important; /**/
+}
+
+/* 文章 / 笔记 内容页：标题栏和正文默认透明会压在背景图上，这里各给一块实底卡片。
+   想更透就把上面 --card 调小；想改内边距/圆角改下面。 */
+.l_main .article > .content,      /* 标题栏（面包屑 + 标题） */
+.l_main > .md-text.content {      /* 正文区域 */
+  background: rgba(255, 255, 255, 0.8); /* 也可以使用var(--card) 这个全局，但是暂时还是个性化*/
+  border-radius: 16px;
+  padding: 1rem 1.5rem 1.5rem;
+  backdrop-filter: saturate(1.8) blur(12px);
+  -webkit-backdrop-filter: saturate(1.8) blur(12px);
+}
+
+/* 左侧栏面板：桌面版默认透明，这里给它一块实底 */
+.l_left .leftbar-container {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  padding: 0.8rem;
+  backdrop-filter: saturate(1.8) blur(12px);
+  -webkit-backdrop-filter: saturate(1.8) blur(12px);
+}
+/* 右侧栏各组件（目录等）：默认透明，逐个加卡片 */
+.l_right .widget-wrapper {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  backdrop-filter: saturate(1.8) blur(12px);
+  -webkit-backdrop-filter: saturate(1.8) blur(12px);
+}
