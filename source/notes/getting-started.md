@@ -6,7 +6,7 @@ wiki: notes
 
 这是「学习笔记」项目的说明页。笔记基于 Stellar 的 **wiki 文档系统**组织：
 
-- 每篇笔记是一个 `layout: wiki` 的页面，放在 `source/notes/` 下
+- 每篇笔记是一个 `layout: page` 的页面，放在 `source/notes/` 下（不要用 `layout: wiki`，会渲染成空白页）
 - 通过 front-matter 里的 `wiki: notes` 归属到本项目
 - 项目信息在 `source/_data/wiki/notes.yml` 中维护，是否上架到 `/wiki/` 由 `source/_data/wiki.yml` 控制
 

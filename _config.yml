@@ -89,7 +89,8 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+## 注意：CI（GitHub Actions）上 checkout 后所有文件 mtime 都是构建时刻，用 'mtime' 会让线上“更新时间”失真
+updated_option: 'date'
 
 # Pagination
 ## Set per_page to 0 to disable pagination

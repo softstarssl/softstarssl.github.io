@@ -3,13 +3,14 @@
 /* 让内容卡片更"实"：默认 --card 是半透明白（亮色 0.5 / 暗色 0.25），会透出背景。
    数值越接近 1 越不透明。想更透就调小，例如 0.75。 */
 :root {
-  --card: rgba(255, 255, 255, 0.8) !important;
+  --card: rgba(255, 255, 255, 0.85) !important;
 }
+/* 暗色模式下文字是白色，卡片底必须用深色，否则白字压白底不可读 */
 @media (prefers-color-scheme: dark) {
-  :root { --card: rgba(255, 255, 255, 0.55) !important; }
+  :root { --card: rgba(28, 32, 36, 0.75) !important; }
 }
 :root[data-theme="dark"] {
-  --card: rgba(255, 255, 255, 0.55) !important; /**/
+  --card: rgba(28, 32, 36, 0.75) !important;
 }
 
 /* 文章 / 笔记 内容页：标题栏和正文默认透明会压在背景图上，这里各给一块实底卡片。
@@ -39,4 +40,28 @@
   margin-bottom: 1rem;
   backdrop-filter: saturate(1.8) blur(12px);
   -webkit-backdrop-filter: saturate(1.8) blur(12px);
+}
+
+/* 暗色模式：上面三块硬编码的白色底全部换成深色（同 --card 的暗色值） */
+@media (prefers-color-scheme: dark) {
+  .l_main .article > .content,
+  .l_main > .md-text.content {
+    background: rgba(28, 32, 36, 0.8);
+  }
+  .l_left .leftbar-container {
+    background: rgba(28, 32, 36, 0.6);
+  }
+  .l_right .widget-wrapper {
+    background: rgba(28, 32, 36, 0.7);
+  }
+}
+:root[data-theme="dark"] .l_main .article > .content,
+:root[data-theme="dark"] .l_main > .md-text.content {
+  background: rgba(28, 32, 36, 0.8);
+}
+:root[data-theme="dark"] .l_left .leftbar-container {
+  background: rgba(28, 32, 36, 0.6);
+}
+:root[data-theme="dark"] .l_right .widget-wrapper {
+  background: rgba(28, 32, 36, 0.7);
 }

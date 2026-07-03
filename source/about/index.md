@@ -7,7 +7,7 @@ comments: false
 
 {% about avatar:/img/head.jpg %}
 softstar
-A undergraduate student of CUHK-SZ
+An undergraduate student of CUHK-SZ
 {% endabout %}
 
 ## 简介

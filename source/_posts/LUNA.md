@@ -1,6 +1,6 @@
 ---
 title: LUNA-Note
-date: 2026-07-2
+date: 2026-07-02 00:00:00
 categories: Notes
 tags: [EEG, ML]
 ---

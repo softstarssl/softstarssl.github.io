@@ -5,7 +5,7 @@ menu_id: friends
 comments: false
 ---
 
-一些友情链接（在 `_config.stellar.yml` 的 `links.friend` 中维护）：
+一些友情链接（在 `source/_data/links/friend.yml` 中维护）：
 
 {% friends friend %}
 
