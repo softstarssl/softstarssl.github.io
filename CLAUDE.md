@@ -62,6 +62,13 @@ tags: [AI, 笔记]           # 可多个
   - 单行：`{% note color:blue 文本 %}`、`{% button color:theme 文本 url %}`、`{% checkbox checked:true 文本 %}`
   - 块：`{% timeline %} <!-- node 标题 --> 内容 {% endtimeline %}`、`{% tabs %} <!-- tab 标题 --> 内容 {% endtabs %}`
 
+## 插件与侧边栏组件
+
+- `hexo-generator-feed`：RSS 输出到 `/atom.xml`（配置在 `_config.yml` 的 `feed` 段）
+- `hexo-generator-sitemap`：输出 `/sitemap.xml`，利于搜索引擎收录
+- `hexo-filter-mermaid-diagrams`：文章 front-matter 加 `mermaid: true` 后，可用 ```` ```mermaid ```` 代码块画流程图
+- 侧边栏组件（ghuser 名片 / tagcloud 标签云 / recent 的 RSS 入口等）在 `source/_data/widgets.yml` 覆盖配置，与主题默认合并；哪个页面显示哪些组件由 `_config.stellar.yml` 的 `site_tree.*.leftbar` 决定
+
 ## 笔记（wiki）系统
 
 Stellar 的文档系统。新增一个笔记项目：

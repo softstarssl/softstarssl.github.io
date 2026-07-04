@@ -1,0 +1,14 @@
+# 侧边栏组件配置（与主题默认 _data/widgets.yml 合并，只需写要覆盖的字段）
+# 可用组件见 node_modules/hexo-theme-stellar/_data/widgets.yml
+
+# GitHub 名片：头像 + followers / following / repos 计数 + Follow 按钮
+ghuser:
+  username: softstarssl
+
+# 标签云：显示每个标签的文章数
+tagcloud:
+  show_count: true
+
+# 近期发布组件：标题旁显示 RSS 订阅入口
+recent:
+  rss: /atom.xml

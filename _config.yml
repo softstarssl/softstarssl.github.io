@@ -108,6 +108,16 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: stellar
 
+# RSS 订阅（hexo-generator-feed）
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# 站点地图（hexo-generator-sitemap），利于搜索引擎收录
+sitemap:
+  path: sitemap.xml
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
