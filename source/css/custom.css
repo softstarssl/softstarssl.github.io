@@ -42,6 +42,11 @@
   -webkit-backdrop-filter: saturate(1.8) blur(12px);
 }
 
+/* GitHub 名片：名字字号调小（主题默认约 1.5rem，长名字会折行） */
+.widgets .widget-wrapper.user-card p.username {
+  font-size: 1.1rem;
+}
+
 /* 暗色模式：上面三块硬编码的白色底全部换成深色（同 --card 的暗色值） */
 @media (prefers-color-scheme: dark) {
   .l_main .article > .content,
