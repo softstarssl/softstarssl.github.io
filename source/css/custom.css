@@ -70,3 +70,36 @@
 :root[data-theme="dark"] .l_right .widget-wrapper {
   background: rgba(28, 32, 36, 0.7);
 }
+
+/* 首页个人卡片 */
+.widget-wrapper.markdown:has(.home-profile) {
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--theme) 24%, transparent);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--theme) 10%, var(--card)), var(--card));
+}
+.home-profile {
+  padding: 0.25rem 0.15rem 0.35rem;
+}
+.home-profile .eyebrow {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  color: var(--theme);
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+}
+.home-profile h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.15rem;
+}
+.home-profile p {
+  margin: 0;
+  color: var(--text-p2);
+  line-height: 1.65;
+}
+.widget-wrapper.markdown:has(.home-profile) .linklist {
+  margin-top: 0.7rem;
+}
+.widget-wrapper.markdown a[href="#random-post"] {
+  color: var(--theme);
+}

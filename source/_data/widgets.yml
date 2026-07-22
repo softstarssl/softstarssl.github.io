@@ -12,3 +12,24 @@ tagcloud:
 # 近期发布组件：标题旁显示 RSS 订阅入口
 recent:
   rss: /atom.xml
+
+# 首页个人介绍与快捷入口
+profile:
+  layout: markdown
+  content: |
+    <div class="home-profile">
+      <span class="eyebrow">WELCOME</span>
+      <h3>你好，我是 softstar</h3>
+      <p>计算机科学在读，关注 AI4SE、算法与有趣的工程实践。</p>
+    </div>
+  linklist:
+    columns: 2
+    items:
+      - title: 关于我
+        url: /about/
+      - title: 学习笔记
+        url: /wiki/
+      - title: 随便看看
+        url: '#random-post'
+      - title: GitHub
+        url: https://github.com/softstarssl
