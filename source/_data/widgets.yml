@@ -29,7 +29,7 @@ profile:
         url: /about/
       - title: 学习笔记
         url: /wiki/
+      - title: 阅读与研究
+        url: /reading/
       - title: 随便看看
         url: '#random-post'
-      - title: GitHub
-        url: https://github.com/softstarssl
